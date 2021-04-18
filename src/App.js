@@ -3,6 +3,7 @@ import { Counter } from './features/counter/Counter'
 import RenderInput from './RenderInput'
 import FrameworkList from './FrameworkList'
 import MockServer from './MockServer'
+import Redux from './Redux'
 import './App.css'
 
 function App() {
@@ -32,8 +33,8 @@ function App() {
         <Counter />
         <RenderInput outputConsole={output} />
         <FrameworkList frameworks={data} />
-        {/* <FrameworkList /> */}
         <MockServer />
+        <Redux />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
