@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const sleep = (msec) => {
   const start = new Date()
-  while (new Date() - start < msec) return
+  while (new Date() - start < msec) console.log('wait')
 }
 
 export const fetchDummy = createAsyncThunk('fetch/dummy', async (num) => {
